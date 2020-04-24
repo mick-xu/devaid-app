@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECharts</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+    </style>
+    <script src="https://devaid.oss-cn-qingdao.aliyuncs.com/assets/scripts/echarts.min.js"></script>
+</head>
+
+<body>
+<div id="chart" class="container"></div>
+<script type="text/javascript">
+        let chart;
+        window.onload = initChart();
+        function setOption(option) {
+            chart.setOption(option);
+        }
+        function initChart() {
+            chart = echarts.init(document.getElementById('chart'));
+        }
+
+</script>
+</body>
+
+</html>
